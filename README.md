@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+[<!DOCTYPE html>
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
@@ -90,3 +90,4 @@ function generate() {
 </script>
 </body>
 </html>
+](https://github.com/Alwatania-industries/name-title-generator-.git)
