@@ -90,4 +90,3 @@ function generate() {
 </script>
 </body>
 </html>
-](https://github.com/Alwatania-industries/name-title-generator-.git)
