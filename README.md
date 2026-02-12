@@ -1,4 +1,4 @@
-[<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ar">
 <head>
 <meta charset="UTF-8">
@@ -55,13 +55,14 @@ function generate() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
-        // نصوص **يمين الصفحة**
-        const rightX = canvas.width - 50; // مسافة ~3 مسافات من اليمين
+        // النصوص على اليمين
+        const rightX = canvas.width - 50; // مسافة من اليمين
         ctx.textAlign = "right";
+        ctx.direction = "rtl"; // مهم للنص العربي
         ctx.textBaseline = "top";
-        ctx.font = "bold 60px Poppins";
 
         // رمضان مبارك بالعربي
+        ctx.font = "bold 60px Poppins";
         ctx.fillStyle = "#2a3984";
         const arabicY = 180;
         ctx.fillText("رمضان مبارك", rightX, arabicY);
@@ -72,13 +73,10 @@ function generate() {
 
         // الاسم والمسمى الوظيفي باللون AZURE
         ctx.fillStyle = "#4495CE";
-
-        // الاسم تحت العبارتين
         ctx.font = "bold 40px Poppins";
         const nameY = englishY + 80;
         if(name) ctx.fillText(name, rightX, nameY);
 
-        // المسمى الوظيفي تحت الاسم
         ctx.font = "bold 32px Poppins";
         const titleY = nameY + 50;
         if(title) ctx.fillText(title, rightX, titleY);
